@@ -9,6 +9,11 @@ const colorList = <Color>[
   Colors.lightBlueAccent,
   Colors.white,
   Colors.black,
+  Colors.pink,
+  Colors.purple,
+  Colors.purpleAccent,
+  Colors.deepPurple,
+  Colors.deepPurpleAccent
 ];  
 
 class AppTheme {
@@ -18,7 +23,7 @@ class AppTheme {
   AppTheme({
     this.selectedColor = 0,
   }):assert( selectedColor >= 0, 'Selected color must be greatter than 0'),
-     assert( selectedColor < colorList.length, 'Selected color must be less or equal than ${ colorList.length -1 }');
+     assert(selectedColor < colorList.length, 'Selected color must be less or equal than ${ colorList.length -1 }');
 
   ThemeData getTheme() => ThemeData(
     useMaterial3: true,
